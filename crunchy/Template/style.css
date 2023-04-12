@@ -3,17 +3,20 @@
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    background-color:#333333;
+    background-color:#17181C !important;
 }
+
+
 /* ----------------------------- CARD MINI EMPIEZA---------------------------------------- */
 .card-min{
     position: relative;
     width: 250px;
     height: 140px;
     border-radius: 12px;
-    overflow: hidden;
+    
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
 }
 .card-min h2{
@@ -82,6 +85,7 @@ body{
     width: 250px;
     height: 140px;
    background:url('img/kimetsu-bg.webp') center / cover;
+   border-radius: 12px;
    transition: .3s ease;
 }
 
@@ -123,7 +127,7 @@ outline-offset: 0px;
     border-radius: 12px;
     position: relative;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    overflow: hidden;
+    
 }
 
 
@@ -193,6 +197,7 @@ outline-offset: 0px;
     width: 250px;
     height: 348px;
    background:url('img/kimetsu-bg.webp') center / cover;
+   border-radius: 12px;
    transition: .3s ease;
 }
 
@@ -234,7 +239,7 @@ outline-offset: 0px;
     border-radius: 12px;
     position: relative;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
-    overflow: hidden;
+   
 }
 .card h2{
     z-index: 99;
@@ -302,6 +307,7 @@ outline-offset: 0px;
     width: 516px;
     height: 289px;
    background:url('img/kimetsu-bg.webp') center / cover;
+   border-radius: 12px;
    transition: .3s ease;
 }
 
@@ -449,7 +455,21 @@ outline-offset: 0px;
 /* ----------------------------- CARD LG CATEGORIA TERMINA---------------------------------------- */
 
 /* ----------------------------- IMAGENES DETALLES  EMPIEZA---------------------------------------- */
-
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+  .navbar {
+    background-color: transparent !important;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
 .img-detail{
     width:100%;
     height: 675px;
@@ -458,22 +478,35 @@ outline-offset: 0px;
     display: flex;
     align-items: center;
 }
-
 .img-detail .pic{
-    z-index: 100;
+   position: relative;
     width: 100%;
     height: 675px;
-    background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.027), rgb(51, 51, 51)),url('img/portada.jpg') ;
-    background-position: center;
-    background-size: cover;
-    
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.img-detail .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-detail .pic::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+   
+    background-image: radial-gradient(farthest-side at 73% 21%, transparent, rgb(23, 24, 28));
 
 }
  .detail{
     position: absolute;
-    top: 20px;
-    left: 60px;
-    z-index: 200;
+    top: 100px;
+  left: 100px;
     padding: 20px;
     color: white;
     width: 40%;
@@ -635,3 +668,98 @@ outline-offset: 0px;
 
 /*----------------------------SLIDER CSS------------------*/
 
+.contenedor{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+/* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
+
+.contenedor-titulo-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-titulo-controles h3 {
+	color: #fff;
+	font-size: 20px;
+    font-weight: 500;
+}
+.contenedor-titulo-controles .indicadores button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+	background: red;
+}
+
+
+/* ---- ----- ----- Contenedor Principal y Flechas ----- ----- ----- */
+
+
+
+.series-cap-recomendadas{
+    margin-bottom: 70px;
+}
+.series-cap-recomendadas .contenedor-principal{
+    display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.series-cap-recomendadas .contenedor-principal .flecha-izquierda,
+.series-cap-recomendadas .contenedor-principal .flecha-derecha{
+    position: absolute;
+	border: none;
+	background: rgba(0, 0, 0, 0);
+	font-size: 20px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+
+}
+
+.series-cap-recomendadas .contenedor-principal .flecha-izquierda:hover,
+.series-cap-recomendadas .contenedor-principal .flecha-derecha:hover{
+	background: rgba(0, 0, 0, 0);
+    font-size: 30px;
+}
+
+.series-cap-recomendadas .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+.series-cap-recomendadas .contenedor-principal .flecha-derecha{
+    right: 0;
+}
+
+/* ---- ----- ----- Carousel ----- ----- ----- */
+
+.series-cap-recomendadas .contenedor-carousel{
+    width: 100%;
+	padding: 10px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.series-cap-recomendadas .contenedor-carousel .carousel{
+    display: flex;
+	flex-wrap: nowrap;
+}
+
+.series-cap-recomendadas .contenedor-carousel .carousel .card-min{
+	
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+    vertical-align: top;
+}

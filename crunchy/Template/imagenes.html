@@ -7,14 +7,79 @@
     <title>IMAGENES</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
     <script src="https://kit.fontawesome.com/d4ea08e6c5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="img-detail" style="display: inline-block;">
-        <div class="pic"></div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-transparent container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+      </header>
+    
+    <div class="img-detail" >
+        <div class="pic">
+            <img src="img/portada.jpg" alt="">
+        </div>
         
     </div>
-    <div class="detail">
+    <div class="container detail">
+        <img src="img/logokimetsu.png" alt="lgKimetsu">
+        <div class="detail-tag">
+            <span >Serie</span>
+            <span >Subtitulado</span>
+            <span >Doblado</span>
+            <span >2020</span>
+        </div>
+        <p class="detail-genero">Acción • Espadas • Shousen</p>
+        <div class="detail-calificacion">
+            <div>
+                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i> 4.8✰(100K)
+            </div>
+            <div>
+               <i class="fa-regular fa-comment"></i> 51 Reseñas
+            </div>
+        </div>
+        <p class="detail-description">El joven Tanjiro Kamado vive felizcon su madre y hermanos pequeños en la montaña, subsistiendo humildemente gracias a la venta de carbón. Una fría mañana, después de regresar de trabajar, se encuentraa toda su familia asesinada con la excepción de su hermana Nezuko, convertida en demonio</p>
+
+        <div class="detail-button">
+            <button class="btn-play">
+                <span><i class="fa-solid fa-play"></i></span>
+              </button>
+              <button class="btn-play-trailer">
+                <span><i class="fa-solid fa-clapperboard"></i><p>Ver Trailer</p></span>
+              </button>
+              <button class="btn-add-list">
+                <span><i class="fa-solid fa-plus"></i><p>Agregar a mi lista</p></span>
+              </button>
+        </div>
+    </div>
+    <!-- <div class="detail">
         <img src="img/logokimetsu.png" alt="lgKimetsu">
         <div class="detail-tag">
             <span >Serie</span>
@@ -45,7 +110,13 @@
                 <span><i class="fa-solid fa-plus"></i><p>Agregar a mi lista</p></span>
               </button>
         </div>
+
         
-    </div>
+        
+    </div> -->
+
+
+   
+    <script src="main.js"></script>
 </body>
 </html>
