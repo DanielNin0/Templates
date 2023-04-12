@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700;900&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#333333;
+}
+/* ----------------------------- CARD MINI EMPIEZA---------------------------------------- */
+.card-min{
+    position: relative;
+    width: 250px;
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+.card-min h2{
+    z-index: 99;
+    position: absolute;
+    top: 12px; 
+    left: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+.card-min .type{
+    z-index: 99;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 300;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .2s ease;
+}
+.card-min .calificacion{
+    z-index: 99;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+
+.card-min .card-min-button{
+    z-index:99;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #ffffff;
+    opacity: 0;
+    
+}
+
+.card-min .card-min-button a i{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-min .card-min-button i{
+   z-index: 99;
+    margin-left: 8px;
+}
+
+.card-min .pic{
+    z-index: 100;
+    width: 250px;
+    height: 140px;
+   background:url('img/kimetsu-bg.webp') center / cover;
+   transition: .3s ease;
+}
+
+.card-min:hover h2{
+    opacity: 1;
+}
+
+.card-min:hover .type{
+    opacity: 1;
+}
+.card-min:hover .calificacion{
+    opacity: 1;
+}
+.card-min:hover .card-min-button{
+    opacity: 1;
+}
+
+
+.card-min:hover .pic{
+    opacity: 0.3;
+    filter: brightness(0.6);
+}
+
+.card-min:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+
+/* ----------------------------- CARD MINI TERMINA---------------------------------------- */
+
+
+
+/* ----------------------------- CARD LARGO EMPIEZA---------------------------------------- */
+.card-lg{
+    width: 250px;
+    height: 348px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+
+.card-lg h2{
+    z-index: 99;
+    position: absolute;
+    top: 12px; 
+    left: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+.card-lg .type{
+    z-index: 99;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 300;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .2s ease;
+}
+.card-lg .calificacion{
+    z-index: 99;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+
+.card-lg .card-lg-button{
+    z-index:99;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #ffffff;
+    opacity: 0;
+    
+}
+
+.card-lg .card-lg-button a i{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-lg .card-lg-button i{
+   z-index: 99;
+    margin-left: 8px;
+}
+
+.card-lg .pic{
+    z-index: 100;
+    width: 250px;
+    height: 348px;
+   background:url('img/kimetsu-bg.webp') center / cover;
+   transition: .3s ease;
+}
+
+.card-lg:hover h2{
+    opacity: 1;
+}
+
+.card-lg:hover .type{
+    opacity: 1;
+}
+.card-lg:hover .calificacion{
+    opacity: 1;
+}
+.card-lg:hover .card-lg-button{
+    opacity: 1;
+}
+
+
+.card-lg:hover .pic{
+    opacity: 0.3;
+    filter: brightness(0.6);
+}
+
+
+.card-lg:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+
+
+/* ----------------------------- CARD LARGO TERMINA---------------------------------------- */
+
+/* ----------------------------- CARD  EMPIEZA---------------------------------------- */
+.card{
+    width: 516px;
+    height: 289px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+.card h2{
+    z-index: 99;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+.card .type{
+    z-index: 99;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 300;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .2s ease;
+}
+.card .calificacion{
+    z-index: 99;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+
+.card .card-button{
+    z-index:99;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #ffffff;
+    opacity: 0;
+    
+}
+
+.card .card-button a i{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card .card-button i{
+   z-index: 99;
+    margin-left: 8px;
+}
+
+.card .pic{
+    z-index: 100;
+    width: 516px;
+    height: 289px;
+   background:url('img/kimetsu-bg.webp') center / cover;
+   transition: .3s ease;
+}
+
+.card:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+.card:hover h2{
+    opacity: 1;
+}
+
+.card:hover .type{
+    opacity: 1;
+}
+.card:hover .calificacion{
+    opacity: 1;
+}
+.card:hover .card-button{
+    opacity: 1;
+}
+
+
+.card:hover .pic{
+    opacity: 0.3;
+    filter: brightness(0.6);
+}
+
+/* ----------------------------- CARD  TERMINA---------------------------------------- */
+
+/* ----------------------------- CARD MIN CATEGORIA EMPIEZA---------------------------------------- */
+.card-min-category{
+    position: relative;
+    width: 250px;
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    outline: 2px solid #696969;
+    outline-offset: 0px;
+    transition: .2s ease;
+}
+.card-min-category h2{
+    z-index: 99;
+    position: absolute;
+    bottom: 0; 
+    left: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+    
+}
+
+
+
+.card-min-category .pic{
+    z-index: 100;
+    width: 250px;
+    height: 140px;
+    background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(59, 59, 59)),url('img/kimetsu-bg.webp') ;
+    background-position: center;
+    background-size: cover;
+   transition: .3s ease;
+   opacity: 0.9;
+   filter: brightness(0.7);
+}
+
+
+
+.card-min-category:hover .pic{
+    transform: scale(1.2);
+   
+}
+
+.card-min-category:hover{
+outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+/* ----------------------------- CARD MIN CATEGORIA TERMINA---------------------------------------- */
+
+/* ----------------------------- CARD LG CATEGORIA EMPIEZA---------------------------------------- */
+
+.card-lg-category{
+    width: 250px;
+    height: 348px;
+    border-radius: 12px;
+    position: relative;
+    outline: 2px solid #696969;
+    outline-offset: 0px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
+
+
+.card-lg-category h2{
+    z-index: 99;
+    position: absolute;
+    bottom: 0; 
+    left: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+
+
+.card-lg-category .pic{
+    z-index: 100;
+    width: 250px;
+    height: 348px;
+    background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.123), rgb(59, 59, 59)),url('img/kimetsu-bg.webp') ;
+    background-position: center;
+    background-size: cover;
+   opacity: 0.9;
+   filter: brightness(0.7);
+   transition: .3s ease;
+}
+
+
+.card-lg-category:hover .pic{
+    transform: scale(1.2);
+}
+
+
+.card-lg-category:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+
+
+
+
+/* ----------------------------- CARD LG CATEGORIA TERMINA---------------------------------------- */
+
+/* ----------------------------- IMAGENES DETALLES  EMPIEZA---------------------------------------- */
+
+.img-detail{
+    width:100%;
+    height: 675px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.img-detail .pic{
+    z-index: 100;
+    width: 100%;
+    height: 675px;
+    background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0.027), rgb(51, 51, 51)),url('img/portada.jpg') ;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+ .detail{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    z-index: 200;
+    padding: 20px;
+    color: white;
+    width: 40%;
+    
+    }
+    .detail img{
+        width: 260px;
+        height: auto;
+        margin-bottom: 20px;
+        }
+
+    .detail-tag span{
+        font-size: 14px;
+        font-style: medium;
+        padding: 4px;
+        background-color: #696969;
+        border-radius: 5px;
+        margin-left: 3px;
+        
+    }
+
+     .detail .detail-genero{
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 300;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+    }
+
+     .detail .detail-calificacion{
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 500;
+        text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+        
+    }
+
+     .detail .detail-calificacion div{
+        display: inline-block;
+        
+    }
+
+   
+    
+     .detail .detail-description{
+        margin-top: 15px;
+        font-size: 18px;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
+        font-weight: 500;
+    
+    }
+    
+     .detail .detail-button{
+        margin-top: 20px;
+        
+    }
+     .detail .detail-button button{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+/* ----------------------------- IMAGENES DETALLES  TERMINA---------------------------------------- */
+
+/* ----------------------------- BOTONES EMPIEZA---------------------------------------- */
+
+.btn-play{
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+    background: linear-gradient(85deg, rgb(255, 115, 0), rgb(231, 136, 72));
+    border: none;
+    transition: .2s ease;
+}
+.btn-play span{
+    font-size: 25px;
+    color:#000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn-play:hover{
+    background: linear-gradient(85deg, rgb(231, 136, 72), rgb(243, 143, 61));
+}
+
+
+.btn-play-trailer{
+    width: auto;
+    height: 49px;
+    border-radius: 25px;
+    background-color: #23252b;
+    border: none;
+    outline: 1px solid #FFFFFF;
+    outline-offset: 0px;
+    transition: .2s ease;
+}
+
+.btn-play-trailer span i{
+    
+    font-size: 25px;
+}
+
+.btn-play-trailer span{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+.btn-play-trailer span p{
+    margin-left: 15px;
+}
+
+.btn-play-trailer:hover{
+    background-color: #727272;
+}
+
+.btn-add-list{
+    width: auto;
+    height: 49px;
+    border-radius: 25px;
+    background-color: #23252b;
+    border: none;
+    outline: 1px solid #FFFFFF;
+    outline-offset: 0px;
+    transition: .2s ease;
+}
+
+.btn-add-list span i{
+    
+    font-size: 25px;
+}
+
+.btn-add-list span{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    color:#ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+.btn-add-list span p{
+    margin-left: 15px;
+}
+
+.btn-add-list:hover{
+    background-color: #727272;
+}
+
+
+/* ----------------------------- BOTONES TERMINA---------------------------------------- */
+
+/*----------------------------SLIDER CSS------------------*/
+

@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+    .detail{
+        width: 60%;
+        left: 30px;;
+    }
+    .btn-play-trailer span p {
+      display: none;
+      
+    }
+    .btn-add-list span p {
+        display: none;
+    }
+  }
