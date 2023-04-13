@@ -80,12 +80,13 @@ body{
     margin-left: 8px;
 }
 
-.card-min .pic{
+.card-min .pic img{
     z-index: 100;
-    width: 250px;
+    width: au;
     height: 140px;
-   background:url('img/kimetsu-bg.webp') center / cover;
+  
    border-radius: 12px;
+   pointer-events: none;
    transition: .3s ease;
 }
 
@@ -117,8 +118,79 @@ outline-offset: 0px;
 
 
 /* ----------------------------- CARD MINI TERMINA---------------------------------------- */
+/*---------------------------------CARD MIN CAPITULOS-----------------------------------*/
+.card-min-cap{
+    position: relative;
+    width: 250px;
+    height: 140px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+}
 
 
+.card-min-cap .card-min-button{
+    z-index:99;
+    position: absolute;
+    color: #ffffff;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.card-min-cap .card-min-button a i{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-min-cap .card-min-button i{
+   z-index: 99;
+    font-size: 25px;
+}
+
+.card-min-cap .pic img{
+    z-index: 100;
+    width: au;
+    height: 140px;
+ 
+   border-radius: 12px;
+   pointer-events: none;
+   transition: .3s ease;
+}
+
+
+.card-min-cap:hover .card-min-button{
+    opacity: 1;
+}
+
+
+.card-min-cap:hover .pic{
+    opacity: 0.3;
+    filter: brightness(0.6);
+}
+
+.card-min-cap:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+.progress-bar {
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f78c01;
+    /* Configura los estilos de la barra de progreso aquí */
+  }
+
+  .progress-bar.progress {
+    background-color: #1e87f0;
+  }
 
 /* ----------------------------- CARD LARGO EMPIEZA---------------------------------------- */
 .card-lg{
