@@ -113,7 +113,7 @@
   
         <article>
             <section class="bg-black inverted overflow-hidden">
-              <div class="d-flex flex-column py-15 container min-vh-75 level-3">
+              <div class="d-flex flex-column py-15 container min-vh-100 level-3">
                 <div class="mt-5">
                   <div class="col-lg-10 col-xl-8">
                     <div class="w-25 mb-2">
@@ -148,29 +148,40 @@
                   </div>
                 </div>
               </div>
-              <span style="background-image: url('img/portada.jpg'); transform: translateY(0%);" class="background  skrollable skrollable-between pic" >
-               
-              </span>
+              <span style="background-image: url('img/portada.jpg'); transform: translateY(0%);" class="background d-none d-sm-block skrollable skrollable-between picbg" ></span>
+              <span style="background-image: url('img/portada-movil.jpg'); transform: translateY(0%);" class="background d-sm-none skrollable skrollable-between picbg" ></span>
             </section>
             
-        </article>
+      </article>
 
-          <section class="container capitulos">
-            <div class="dropdown">
-                <button class="btn btn-sm btn-primary btn-with-icon rounded-pill btn-temporadas" type="button"
-                  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Temporadas <i class="bi fa-solid fa-angle-down" style="color: #ffffff;"></i>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Temporada 1</a></li>
-                  <li><a class="dropdown-item" href="#">Temporada 2</a></li>
-                  <li><a class="dropdown-item" href="#">Temporada 3</a></li>
-                </ul>
+      
+
+          <section class="container ">
+            
+            <div class="d-flex">
+              <div>
+                <button type="button" class="btn btn-sm btn-success rounded-pill me-0 estatus">En Emisión</button>
+                <br>
+                
               </div>
+              <div class="dropdown capitulos ms-auto">
+                  <button class="btn btn-sm btn-primary btn-with-icon rounded-pill btn-temporadas" type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Temporadas <i class="bi fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Temporada 1</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 2</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 3</a></li>
+                  </ul>
+                </div>
+               
+            </div>
+            <span><p class="cap-prox fw-light text-white mb-1">Proximo Capitulo: 17-04-2023</p></span>
             <div class="carousel ">
                 
                 <div
-                  data-carousel='{"mouseDrag": true, "gutter": 16, "loop": false, "items":1, "nav": false, "responsive": {"0": {"items": 2}, "768": {"items": 3}, "992": {"items": 4}, "1200": {"items": 5}}}'>
+                  data-carousel='{"mouseDrag": true, "gutter": 16,"loop": false, "items":1, "nav": false, "responsive": {"0": {"items": 2}, "768": {"items": 3}, "992": {"items": 4}, "1200": {"items": 5}}}'>
                   <div>
                     
                       <div class="card-min-cap">
@@ -178,12 +189,14 @@
                         <div class="card-min-button">
                             <i class="fa-solid fa-play"></i>
                         </div>
+                        <span class="cap-duracion">18 min. restantes</span>
                         <div class="pic">
                             <img src="img/kimetsu-bg.webp" alt="">
                         </div>
                         <div class="progreso-bar progreso" style="width: 50%;"></div>
-            
+
                     </div>
+                    <span class="text-white cap-title"><p class="fw-bold">T1 - C1 Punto de Infleción</p></span>
                     
                   </div>
               
@@ -192,13 +205,16 @@
         
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
+                          
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C2  .......</p></span>
                   </div>
               
                   <div>
@@ -207,12 +223,14 @@
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C3  .......</p></span>
                   </div>
               
                   <div>
@@ -221,12 +239,14 @@
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C4  .......</p></span>
                   </div>
               
                   <div>
@@ -235,25 +255,30 @@
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C5  .......</p></span>
                   </div>
                   <div>
+                    
                     <div class="card-min-cap" >
         
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C6  .......</p></span>
                   </div>
               
                   <div>
@@ -262,12 +287,14 @@
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C7  .......</p></span>
                   </div>
               
                   <div>
@@ -276,12 +303,14 @@
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C8  .......</p></span>
                   </div>
               
                   <div>
@@ -290,12 +319,14 @@
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C9  .......</p></span>
                   </div>
               
                   <div>
@@ -304,12 +335,14 @@
                       <div class="card-min-button">
                           <i class="fa-solid fa-play"></i>
                       </div>
+                      <span class="cap-duracion">18 min. restantes</span>
                       <div class="pic">
                           <img src="img/kimetsu-bg.webp" alt="">
                       </div>
                       <div class="progreso-bar progreso" style="width: 50%;"></div>
           
                   </div>
+                  <span class="text-white cap-title"><p class="fw-bold">T1 - C10  .......</p></span>
                   </div>
                 </div>
               </div>
@@ -318,6 +351,56 @@
               
               
           </section>
+
+          <hr class="divider">
+
+          <section class="container">
+            <div class="d-flex">
+              <div>
+                <p class="text-start fs-6 text-white fw-bold fs-lg">51 Reseñas • 4.8 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i> (9.2 K)</p>
+                <br>
+                
+              </div>
+              <div class="dropdown capitulos ms-auto flex-wrap">
+                  <button class="btn btn-sm btn-secondary btn-with-icon rounded-pill" type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Relevancia <i class=" bi fa-solid fa-bars-staggered"></i>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Temporada 1</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 2</a></li>
+                    <li><a class="dropdown-item" href="#">Temporada 3</a></li>
+                  </ul>
+                </div>
+               
+            </div>
+            <div class="d-flex bd-highlight mb-3">
+              <div class=" bd-highlight">
+                <span class="avatar avatar-lg">
+                  <img src="https://cube.webuildthemes.com/assets/images/users/user-2.jpg" class="rounded-circle" alt="Avatar">
+                </span>
+              </div>
+              <div class="ps-2 bd-highlight text-white align-self-center fw-light"><p style="margin-bottom: 0;">Reseñar como <strong>Daniel Niño</strong> </p>
+                <div class="d-inline-flex align-items-center ">
+                        
+                  <ul class="rating text-yellow fs-6">
+                    <li><i class="fa-solid fa-star" style="color: #e5cc2a;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #e5cc2a;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #e5cc2a;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #e5cc2a;"></i></li>
+                    <li><i class="fa-solid fa-star" style="color: #e5cc2a;"></i></li>
+                  </ul>
+                  
+                </div>
+              </div>
+              
+            </div>
+
+            <div>
+              <textarea class="cap-comment" name="" id="" placeholder="Escriba una reseña"></textarea>
+            </div>
+
+                     </section>
      
   
   

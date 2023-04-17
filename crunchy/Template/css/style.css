@@ -7,7 +7,7 @@
     font-weight: 500;
 }
 
-.pic::after {
+.picbg::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -65,6 +65,9 @@
     text-align: right;
     
 }
+.estatus{
+    pointer-events: none;
+}
 .btn-temporadas{
     margin-bottom: 16px;
     border: none !important;
@@ -86,7 +89,7 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     overflow: hidden;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 2px;
     margin-bottom: 5px;
     transition: .1s ease;
     user-select: none;
@@ -115,6 +118,23 @@
 .card-min-cap .card-min-button i{
    z-index: 99;
     font-size: 25px;
+}
+.card-min-cap .cap-duracion{
+    z-index: 99;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .3s ease;
+    
+}
+.card-min-cap:hover .cap-duracion{
+    opacity: 1;
 }
 
 .card-min-cap .pic img{
@@ -152,14 +172,47 @@ outline-offset: 0px;
     width: 100%;
     height: 5px;
     background-color: #f78c01;
+    transition: .3s ease;
     /* Configura los estilos de la barra de progreso aquí */
   }
 
-  .progreso-bar.progreso {
+
+
+.progreso-bar .progreso {
     background-color: #1e87f0;
   }
 
 .carousel{
     user-select: none;
 }
+.tns-controls button {
+    margin-top: -40px !important;
+}
+.cap-title{
+    font-size: 14px;
+}
+
+
+.divider{
+    color: #494d58;
+    width: 15%;
+    margin: 0 auto;
+    height: 5px !important;
+    border-width: 0;
+    background-color: #494d58;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.cap-comment{
+    width: 100%;
+    height: 10rem;
+    background-color: #2d2f34;
+    color: white;
+    border-radius: 12px;
+    border: 3px solid #777c8a !important;
+    resize: none;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
 
