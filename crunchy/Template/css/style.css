@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500;700;900&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.detailt-descripcion{
+    font-weight: 500;
+}
+
 .pic::after {
     content: "";
     position: absolute;
