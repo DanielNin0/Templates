@@ -78,5 +78,88 @@
     background: linear-gradient(85deg, rgb(231, 136, 72), rgb(221, 153, 97));
 }
 
+.card-min-cap{
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    transition: .1s ease;
+    user-select: none;
+    
+}
 
+
+.card-min-cap .card-min-button{
+    z-index:99;
+    position: absolute;
+    color: #ffffff;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .2s ease;
+    
+}
+
+.card-min-cap .card-min-button  i{
+    text-decoration: none;
+    color: #ffffff;
+    transition: .2s ease;
+}
+
+.card-min-cap .card-min-button i{
+   z-index: 99;
+    font-size: 25px;
+}
+
+.card-min-cap .pic img{
+    z-index: 100;
+    width: auto;
+    height: auto;
+   border-radius: 14px;
+   pointer-events: none;
+   user-select: none;
+   
+}
+
+
+.card-min-cap:hover .card-min-button{
+    opacity: 1;
+}
+
+
+.card-min-cap:hover .pic{
+    opacity: 0.3;
+    filter: brightness(0.6);
+}
+
+.card-min-cap:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+.progreso-bar {
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #f78c01;
+    /* Configura los estilos de la barra de progreso aquí */
+  }
+
+  .progreso-bar.progreso {
+    background-color: #1e87f0;
+  }
+
+.carousel{
+    user-select: none;
+}
 
