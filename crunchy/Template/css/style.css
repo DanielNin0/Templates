@@ -187,6 +187,7 @@ outline-offset: 0px;
 }
 .tns-controls button {
     margin-top: -40px !important;
+    background: transparent !important;
 }
 .cap-title{
     font-size: 14px;
@@ -215,4 +216,151 @@ outline-offset: 0px;
     padding-top: 15px;
 }
 
+.cap-comment-user{
+    width: 100%;
+    height: auto;
+    background-color: #2d2f34;
+    color: white;
+    border-radius: 12px;
+    font-weight: 300;
+}
+
+.cap-comment-like i{
+    cursor: pointer;
+
+}
+
+.verresenas{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+/* ----------------------------- CARD MINI EMPIEZA---------------------------------------- */
+.card-min{
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    transition: .1s ease;
+    user-select: none;
+}
+.card-min h2{
+    z-index: 99;
+    position: absolute;
+    top: 12px; 
+    left: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+.card-min .type{
+    z-index: 99;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 300;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .2s ease;
+}
+.card-min .calificacion{
+    z-index: 99;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .3s ease;
+    
+}
+
+.card-min .card-min-button{
+    z-index:99;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #ffffff;
+    opacity: 0;
+    transition: .3s ease;
+    
+}
+
+.card-min .card-min-button a i{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-min .card-min-button i{
+   z-index: 99;
+    margin-left: 8px;
+}
+
+.card-min .pic img{
+   transition: .3s ease;
+   z-index: 100;
+    width: auto;
+    height: auto;
+   border-radius: 14px;
+   pointer-events: none;
+   user-select: none;
+}
+
+.card-min:hover h2{
+    opacity: 1;
+}
+
+.card-min:hover .type{
+    opacity: 1;
+}
+.card-min:hover .calificacion{
+    opacity: 1;
+}
+.card-min:hover .card-min-button{
+    opacity: 1;
+}
+
+
+.card-min:hover .pic{
+    opacity: 0.3;
+    filter: brightness(0.6);
+}
+
+.card-min:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+
+/* ----------------------------- CARD MINI TERMINA---------------------------------------- */
+
+.slider-principal .tns-outer button{
+    opacity: 0;
+    display: none;
+}
+
+#tns1 > .tns-item{
+    padding-right: 0 !important;
+}
+.vacio{
+    height: 250px;
+}
 
