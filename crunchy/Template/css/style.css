@@ -15,7 +15,7 @@
     right: 0;
     top: 0;
    
-    background-image: radial-gradient(farthest-side at 75% 30%, transparent, rgb(23, 24, 28));
+    background-image: radial-gradient(farthest-side at 70% 30%, transparent, rgb(23, 24, 28));
 
 }
 .fa-house{
@@ -352,15 +352,264 @@ outline-offset: 0px;
 
 /* ----------------------------- CARD MINI TERMINA---------------------------------------- */
 
+/* ----------------------------- CARD  EMPIEZA---------------------------------------- */
+@media screen and (max-width: 480px) {
+    .card{
+      width: 21rem !important;
+    }
+  }
+.card{
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    transition: .1s ease;
+    user-select: none;
+   
+}
+.card h2{
+    z-index: 99;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+.card .type{
+    z-index: 99;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 300;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .2s ease;
+}
+.card .calificacion{
+    z-index: 99;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .3s ease;
+}
+
+.card .card-button{
+    z-index:99;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #ffffff;
+    opacity: 0;
+    transition: .3s ease;
+    
+}
+
+.card .card-button a i{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card .card-button i{
+   z-index: 99;
+    margin-left: 8px;
+}
+
+.card .pic img{
+    z-index: 100;
+    width: auto;
+    height: auto;
+   background:url('img/kimetsu-bg.webp') center / cover;
+   border-radius: 12px;
+   transition: .3s ease;
+}
+
+.card:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+.card:hover h2{
+    opacity: 1;
+}
+
+.card:hover .type{
+    opacity: 1;
+}
+.card:hover .calificacion{
+    opacity: 1;
+}
+.card:hover .card-button{
+    opacity: 1;
+}
+
+
+.card:hover .pic{
+    opacity: 0.3;
+    filter: brightness(0.6);
+}
+
+/* ----------------------------- CARD  TERMINA---------------------------------------- */
+
+/* ----------------------------- CARD LARGO EMPIEZA---------------------------------------- */
+
+.card-lg{
+    width: auto;
+    height: 348px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+    transition: .1s ease;
+    user-select: none;
+}
+
+
+.card-lg h2{
+    z-index: 99;
+    position: absolute;
+    top: 12px; 
+    left: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+}
+.card-lg .type{
+    z-index: 99;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 300;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .2s ease;
+}
+.card-lg .calificacion{
+    z-index: 99;
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .3s ease;
+}
+
+.card-lg .card-lg-button{
+    z-index:99;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #ffffff;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.card-lg .card-lg-button a i{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.card-lg .card-lg-button i{
+   z-index: 99;
+    margin-left: 8px;
+}
+
+.card-lg .pic img{
+    z-index: 100;
+    width: 250px;
+    height: 348px;
+   background:url('img/kimetsu-bg.webp') center / cover;
+   border-radius: 12px;
+   transition: .3s ease;
+   
+}
+
+.card-lg:hover h2{
+    opacity: 1;
+}
+
+.card-lg:hover .type{
+    opacity: 1;
+}
+.card-lg:hover .calificacion{
+    opacity: 1;
+}
+.card-lg:hover .card-lg-button{
+    opacity: 1;
+}
+
+
+.card-lg:hover .pic{
+    opacity: 0.3;
+    filter: brightness(0.6);
+}
+
+
+.card-lg:hover{
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+
+
+/* ----------------------------- CARD LARGO TERMINA---------------------------------------- */
+
+
 .slider-principal .tns-outer button{
     opacity: 0;
     display: none;
 }
 
-#tns1 > .tns-item{
+/* #tns1 > .tns-item{
     padding-right: 0 !important;
-}
-.vacio{
-    height: 250px;
-}
+} */
 
+.carousel-caption {
+    top: 6rem !important;
+    text-align:left !important;
+}
+.carousel-description{
+    text-shadow: 5px 6px 4px #2d2f34;
+}
+.carousel-item{
+    transition: transform 6s ease;
+}
+.carousel-movil{
+    top: 9rem !important;
+}

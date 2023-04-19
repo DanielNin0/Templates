@@ -126,38 +126,191 @@
 
 
     <article>
-      <section class="bg-black inverted overflow-hidden">
-        <div class="d-flex flex-column py-15 container level-3"> <!--min-vh-100-->
-          <div class="mt-5 vacio">
-            
-          </div>
-        </div>
-        <!-- <span style="background-image: url('img/portada2.jpg'); transform: translateY(0%);"
-          class="background d-none d-sm-block skrollable skrollable-between picbg"></span>
-        <span style="background-image: url('img/portada-movil.jpg'); transform: translateY(0%);"
-          class="background d-sm-none skrollable skrollable-between picbg"></span> -->
-
-          <div class="carousel background skrollable skrollable-between slider-principal picbg">
-            <div data-carousel='{"speed": 1800, "autoplay": true, "autoplayTimeout": 9000,
-            "mouseDrag": true, "gutter":10 , "loop": true, "items": 1, "nav": false, "mode":"gallery"}'>
-              <div>
-                <div class="equal-16-10 ">
-                  <img src="img/kimetsu-bg.webp" alt="">
-                </div>
+      <section class="">
+       
+          <div id="carouselExampleFade" class="carousel slide carousel-fade d-none d-sm-block" data-bs-ride="carousel" data-bs-touch="false" > <!--data-bs-ride="carousel" data-bs-touch="false"-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/portada2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                  <div class="w-20 mb-2 d-none d-md-block">
+                    <img class="img-fluid" src="img/logokimetsu.png" alt="">
+                  </div>
+                  <div class="mb-1 w-50 d-none d-xl-block">
+                    <span class="badge bg-secondary text-white rounded-pill detail-tag">
+                      <p class="fw-bold">Serie</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Subtitulado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Doblado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">2020</p>
+                    </span>
+                  </div>
+                  <p class="w-40 carousel-description d-none d-xl-block">El camino de los herreros será más pacifico que el distrito rojo</p>
+                  <h5 class="fw-bolder carousel-description">¡Nueva Temporada!</h5>
+                    <button type="button" class="btn btn-sm btn-primary btn-icon rounded-circle btn-play"><i
+                      class="bi fa-solid fa-play bi" style="color: #17181C;"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-trailer"><i class="fa-solid fa-circle-info"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-list"><i
+                        class="fa-solid fa-list-ul"></i></button>
+                </div>                
               </div>
-          
-              <div>
-                <figure class="equal-16-10" style="background-image: url('img/portada.jpg')">
-                </figure>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/portada3.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption ">
+                  <div class="w-20 mb-2 d-none d-md-block">
+                    <img class="img-fluid" src="img/logoattack.png" alt="">
+                  </div>
+                  <div class="mb-1 w-50 d-none d-xl-block">
+                    <span class="badge bg-secondary text-white rounded-pill detail-tag">
+                      <p class="fw-bold">Serie</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Subtitulado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Doblado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">2020</p>
+                    </span>
+                  </div>
+                  <p class="w-40 carousel-description d-none d-xl-block">La humanidad esta al borde de la extinsión</p>
+                  <h5 class="fw-bolder carousel-description">Temporada Final!</h5>
+                    <button type="button" class="btn btn-sm btn-primary btn-icon rounded-circle btn-play"><i
+                      class="bi fa-solid fa-play bi" style="color: #17181C;"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-trailer"><i class="fa-solid fa-circle-info"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-list"><i
+                        class="fa-solid fa-list-ul"></i></button>
+                </div>  
               </div>
-          
-              <div>
-                <figure class="equal-16-10" style="background-image: url('img/portada.png')">
-                </figure>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/portada4.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption ">
+                  <div class="w-20 mb-2 d-none d-md-block">
+                    <img class="img-fluid" src="img/logohero.png" alt="">
+                  </div>
+                  <div class="mb-1 w-50 d-none d-xl-block">
+                    <span class="badge bg-secondary text-white rounded-pill detail-tag">
+                      <p class="fw-bold">Serie</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Subtitulado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Doblado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">2020</p>
+                    </span>
+                  </div>
+                  <p class="w-40 carousel-description d-none d-xl-block">Un Otaku se encuntra un libro que lo transporta a otro mundo, ahi se convertira en el heroe del Escudo </p>
+                  <h5 class="fw-bolder carousel-description">¡Ya disponible!</h5>
+                    <button type="button" class="btn btn-sm btn-primary btn-icon rounded-circle btn-play"><i
+                      class="bi fa-solid fa-play bi" style="color: #17181C;"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-trailer"><i class="fa-solid fa-circle-info"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-list"><i
+                        class="fa-solid fa-list-ul"></i></button>
+                </div>  
               </div>
             </div>
+            
           </div>
+          <!--Carousel Movil-->
+          <div id="carouselExampleFade" class="carousel slide carousel-fade d-sm-none " data-bs-ride="carousel" > <!--data-bs-ride="carousel" data-bs-touch="false"-->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/portadamovil1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption carousel-movil">
+                  
+                  
+                  <p class="w-40 carousel-description d-none d-xl-block">El camino de los herreros será más pacifico que el distrito rojo</p>
+                  <h5 class="fw-bolder carousel-description">¡Nueva Temporada!</h5>
+                    <button type="button" class="btn btn-sm btn-primary btn-icon rounded-circle btn-play"><i
+                      class="bi fa-solid fa-play bi" style="color: #17181C;"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-trailer"><i class="fa-solid fa-circle-info"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-list"><i
+                        class="fa-solid fa-list-ul"></i></button>
+                </div>                
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/portadamovil2.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption carousel-movil">
+                  <div class="w-20 mb-2 d-none d-md-block">
+                    <img class="img-fluid" src="img/logoattack.png" alt="">
+                  </div>
+                  <div class="mb-1 w-50 d-none d-xl-block">
+                    <span class="badge bg-secondary text-white rounded-pill detail-tag">
+                      <p class="fw-bold">Serie</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Subtitulado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Doblado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">2020</p>
+                    </span>
+                  </div>
+                  <p class="w-40 carousel-description d-none d-xl-block">La humanidad esta al borde de la extinsión</p>
+                  <h5 class="fw-bolder carousel-description">Temporada Final!</h5>
+                    <button type="button" class="btn btn-sm btn-primary btn-icon rounded-circle btn-play"><i
+                      class="bi fa-solid fa-play bi" style="color: #17181C;"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-trailer"><i class="fa-solid fa-circle-info"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-list"><i
+                        class="fa-solid fa-list-ul"></i></button>
+                </div>  
+              </div>
+              <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/portadamovil3.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption carousel-movil">
+                  <div class="w-20 mb-2 d-none d-md-block">
+                    <img class="img-fluid" src="img/logohero.png" alt="">
+                  </div>
+                  <div class="mb-1 w-50 d-none d-xl-block">
+                    <span class="badge bg-secondary text-white rounded-pill detail-tag">
+                      <p class="fw-bold">Serie</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Subtitulado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">Doblado</p>
+                    </span>
+                    <span class="badge bg-secondary text-white rounded-pill  detail-tag">
+                      <p class="fw-bold">2020</p>
+                    </span>
+                  </div>
+                  <p class="w-40 carousel-description d-none d-xl-block">Un Otaku se encuntra un libro que lo transporta a otro mundo, ahi se convertira en el heroe del Escudo </p>
+                  <h5 class="fw-bolder carousel-description">¡Ya disponible!</h5>
+                    <button type="button" class="btn btn-sm btn-primary btn-icon rounded-circle btn-play"><i
+                      class="bi fa-solid fa-play bi" style="color: #17181C;"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-trailer"><i class="fa-solid fa-circle-info"></i></button>
+                      <button type="button" class="btn btn-sm btn-outline-light btn-icon rounded-pill btn-play-list"><i
+                        class="fa-solid fa-list-ul"></i></button>
+                </div>  
+              </div>
+            </div>
+            
+          </div>
+         
       </section>
+      
 
     </article>
 
@@ -168,14 +321,14 @@
    
 
 
-    <!----------------------------------SIMILARES---------------------------------------->
+    <!----------------------------------Seguir viendo---------------------------------------->
 
     <section class="container ">
 
       <div class="d-flex">
         <div>
 
-          <p class="text-white fw-normal fs-6"><strong>Más animes como este</strong></p>
+          <p class="text-white fw-normal fs-6">Hola <strong>Daniel</strong> continua viendo anime</p>
 
         </div>
 
@@ -365,7 +518,773 @@
 
     </section>
 
+    <!----------------------------------Ultimos Lanzamientos---------------------------------------->
 
+    <section class="container mt-5">
+
+      <div class="d-flex">
+        <div>
+
+          <p class="text-white fw-normal fs-6">Últimos lanzamientos</p>
+
+        </div>
+
+      </div>
+
+      <div class="carousel ">
+
+        <div
+          data-carousel='{"container": "#fixedWidth","fixedWidth": 400, "swipeAngle": false, "mouseDrag": true, "gutter": 16,"loop": false, "items":1, "nav": false, "responsive": {"0": {"items": 1}, "768": {"items": 1}, "992": {"items": 1}, "1200": {"items": 5}}}'>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+            
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card">
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+    <!----------------------------------Recomendados para ti---------------------------------------->
+
+    <section class="container mt-5">
+
+      <div class="d-flex">
+        <div>
+
+          <p class="text-white fw-normal fs-6">Recomendados para ti</p>
+
+        </div>
+
+      </div>
+
+      <div class="carousel ">
+
+        <div
+          data-carousel='{"container": "#fixedWidth","fixedWidth": 235, "swipeAngle": false, "mouseDrag": true, "gutter": 16,"loop": false, "items":1, "nav": false, "responsive": {"0": {"items": 2}, "768": {"items": 3}, "992": {"items": 4}, "1200": {"items": 5}}}'>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+    <!----------------------------------Ver Luego---------------------------------------->
+
+    <section class="container mt-5">
+
+      <div class="d-flex">
+        <div>
+
+          <p class="text-white fw-normal fs-6">Ver luego</p>
+
+        </div>
+
+      </div>
+
+      <div class="carousel ">
+
+        <div
+          data-carousel='{"container": "#fixedWidth","fixedWidth": 235, "swipeAngle": false, "mouseDrag": true, "gutter": 16,"loop": false, "items":1, "nav": false, "responsive": {"0": {"items": 2}, "768": {"items": 3}, "992": {"items": 4}, "1200": {"items": 5}}}'>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+          <div>
+
+            <div class="card-min">
+
+              <h2>Kimetsu No Yaiba</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 *</span>
+              <div class="card-min-button">
+                <a href="#"><i class="fa-solid fa-play"></i></a>
+                <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/kimetsu-bg.webp" alt="">
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </section>
+
+     <!----------------------------------10 mas visto en tu pais---------------------------------------->
+
+     <section class="container mt-5">
+
+      <div class="d-flex">
+        <div>
+
+          <p class="text-white fw-normal fs-6">Los <strong>10 más vistos</strong> en tu pais</p>
+
+        </div>
+
+      </div>
+
+      <div class="carousel ">
+
+        <div
+          data-carousel='{"container": "#fixedWidth","fixedWidth": 235, "swipeAngle": false, "mouseDrag": true, "gutter": 16,"loop": false, "items":1, "nav": false, "responsive": {"0": {"items": 2}, "768": {"items": 3}, "992": {"items": 4}, "1200": {"items": 5}}}'>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+          <div>
+
+            <div class="card-lg">
+              <h2>SPY X FAM</h2>
+              <span class="type">Serie - Sub - Dob</span>
+              <span class="calificacion">5.0 <i class="fa-solid fa-star" style="color: #e5cc2a;"></i></span>
+              <div class="card-lg-button">
+                  <a href="#"><i class="fa-solid fa-play"></i></a>
+                  <a href="#"><i class="fa-solid fa-plus-minus"></i></a>
+              </div>
+              <div class="pic">
+                <img src="img/spyxfam.jpg" alt="">
+              </div>
+          </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </section>
 
 
 
