@@ -613,3 +613,68 @@ outline-offset: 0px;
 .carousel-movil{
     top: 9rem !important;
 }
+
+.coleccion .tns-controls button {
+    margin-top: -10px !important;
+    background: transparent !important;
+}
+
+
+/* ----------------------------- CARD MIN CATEGORIA EMPIEZA---------------------------------------- */
+.card-min-category{
+    position: relative;
+    width: auto;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    outline: 2px solid #696969;
+    outline-offset: 0px;
+    transition: .2s ease;
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 5px;
+}
+.card-min-category h2{
+    z-index: 99;
+    position: absolute;
+    bottom: 0; 
+    left: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    pointer-events: none;
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    
+    
+}
+
+
+
+.card-min-category .pic img{
+    z-index: 100;
+    width: auto;
+    height: auto;
+    background-image:  linear-gradient(to bottom, rgba(245, 246, 252, 0), rgb(59, 59, 59)),url('img/kimetsu-bg.webp') ;
+    background-position: center;
+    background-size: cover;
+   transition: .3s ease;
+   opacity: 0.9;
+   filter: brightness(0.7);
+}
+
+
+
+.card-min-category:hover .pic img{
+    transform: scale(1.2);
+   
+}
+
+.card-min-category:hover{
+outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+    
+}
+
+/* ----------------------------- CARD MIN CATEGORIA TERMINA---------------------------------------- */
