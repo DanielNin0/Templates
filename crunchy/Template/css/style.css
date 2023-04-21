@@ -690,7 +690,7 @@ outline-offset: 0px;
 .category-card h2{
     z-index: 99;
     position: absolute;
-    bottom: 2px; 
+    top: 1rem; 
     left: 15px;
     color: #fff;
     font-size: 25px;
@@ -699,4 +699,102 @@ outline-offset: 0px;
     transition: .2s ease;
     text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
     
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    text-shadow: none !important;
+}
+
+.category-card-list{
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    outline: 2px solid #696969;
+    outline-offset: 0px;
+    border-radius: 12px;
+    transition: .3s ease;
+}
+.list-title{
+    z-index: 99;
+    position: absolute;
+    top: 12px; 
+    left: 15px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0;
+    
+    transition: .2s ease;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+}
+
+.category-card-list .type{
+    z-index: 99;
+    position: absolute;
+    top: 32px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 12px;
+    font-weight: 300;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .2s ease;
+}
+
+.category-card-list .calificacion{
+    z-index: 99;
+    position: absolute;
+    bottom: 0px;
+    left: 15px;
+    color: #ffffff;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 400;
+    pointer-events: none;
+    text-shadow: 6px 2px 3px rgba(0,0,0,0.6);
+    transition: .3s ease;
+}
+
+.category-card-list .card-min-button{
+    z-index:99;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: #ffffff;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.category-card-list .card-min-button a i{
+    text-decoration: none;
+    color: #ffffff;
+    z-index: 99;
+    margin-left: 8px;
+}
+
+.category-card-list-img{
+    
+    transform: none !important;
+}
+
+.category-card-list:hover {
+    outline: 2px solid #FFFFFF;
+outline-offset: 0px;
+}
+
+.category-card-list:hover .list-title{
+    opacity: 1;
+}
+.category-card-list:hover .type{
+    opacity: 1;
+}
+.category-card-list:hover .calificacion{
+    opacity: 1;
+}
+
+.category-card-list:hover .card-min-button{
+    opacity: 1;
+}
+.category-card-list:hover .category-card-list-img{
+    opacity: 0.3;
+    filter: brightness(0.6);
 }
